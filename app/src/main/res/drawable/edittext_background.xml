@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado enfocado -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <size android:height="2dp" />
+            <solid android:color="@color/strongBlue" />
+        </shape>
+    </item>
+    <!-- Estado normal -->
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="1dp" />
+            <solid android:color="@color/background" />
+        </shape>
+    </item>
+</selector>
