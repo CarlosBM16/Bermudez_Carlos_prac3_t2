@@ -42,6 +42,12 @@
         <item name="android:textColorHint">@color/midGrey</item>
     </style>
 
+    <style name="BoldTextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@color/midGrey</item>
+    </style>
+
     <!-- Tema final -->
     <style name="Theme.Ejercicio1" parent="Base.Theme.Ejercicio1" />
 </resources>

@@ -12,14 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ejercicio1">
         <activity
+            android:name=".Games"
+            android:exported="false" />
+        <activity
+            android:name=".Preferences"
+            android:exported="false" />
+        <activity
             android:name=".NewPlayer"
             android:exported="false"
-            android:theme="@style/Base.Theme.Ejercicio1"/>
+            android:theme="@style/Base.Theme.Ejercicio1" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Base.Theme.Ejercicio1">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

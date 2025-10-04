@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/eligeOpcionTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="92dp"
+            android:text="Elige una opción:"
+            style="@style/BoldTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eligeOpcionTxt"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp">
+            <RadioButton
+                android:id="@+id/angryBirdsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Angry Birds"/>
+
+            <RadioButton
+                android:id="@+id/dragonFlyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Dragon fly"/>
+
+            <RadioButton
+                android:id="@+id/hillClimbBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Hill climbing racing"/>
+
+            <RadioButton
+                android:id="@+id/pocketSoccerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Pocket soccer"/>
+
+            <RadioButton
+                android:id="@+id/radiantDefenseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Radiant defense"/>
+        </RadioGroup>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="7"
+            android:stepSize="1"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:max="10"
+            app:layout_constraintTop_toBottomOf="@id/ratingBar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_check_24"
+            app:backgroundTint="@color/strongBlue"
+            app:layout_constraintTop_toBottomOf="@id/seekBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
