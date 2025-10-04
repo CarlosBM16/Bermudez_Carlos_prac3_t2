@@ -12,17 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ejercicio1">
         <activity
-            android:name=".Games"
+            android:name="com.example.ejercicio3.Games"
             android:exported="false" />
         <activity
-            android:name=".Preferences"
+            android:name="com.example.ejercicio3.Preferences"
             android:exported="false" />
         <activity
-            android:name=".NewPlayer"
+            android:name="com.example.ejercicio3.NewPlayer"
             android:exported="false"
             android:theme="@style/Base.Theme.Ejercicio1" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.ejercicio3.MainActivity"
             android:exported="true"
             android:theme="@style/Base.Theme.Ejercicio1">
             <intent-filter>
