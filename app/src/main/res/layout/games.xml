@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.example.ejercicio3.GameView
+            android:id="@+id/angryBirds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gameImg="@drawable/games_angrybirds"
+            app:gameText="Angry Birds"
+            app:gameChecked="false"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.example.ejercicio3.GameView
+            android:id="@+id/dragonFly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gameImg="@drawable/games_dragonfly"
+            app:gameText="Dragon Fly"
+            app:gameChecked="false"
+            app:layout_constraintTop_toBottomOf="@+id/angryBirds"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <com.example.ejercicio3.GameView
+            android:id="@+id/hillClimbing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gameImg="@drawable/games_hillclimbingracing"
+            app:gameText="Hill Climbing Racing"
+            app:gameChecked="false"
+            app:layout_constraintTop_toBottomOf="@+id/dragonFly"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <com.example.ejercicio3.GameView
+            android:id="@+id/radiantDefense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gameImg="@drawable/games_radiantdefense"
+            app:gameText="Radiant Defense"
+            app:gameChecked="false"
+            app:layout_constraintTop_toBottomOf="@+id/hillClimbing"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <com.example.ejercicio3.GameView
+            android:id="@+id/pocketSoccer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gameImg="@drawable/games_pocketsoccer"
+            app:gameText="Pocket Soccer"
+            app:gameChecked="false"
+            app:layout_constraintTop_toBottomOf="@+id/radiantDefense"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <com.example.ejercicio3.GameView
+            android:id="@+id/ninjaJump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gameImg="@drawable/games_ninjump"
+            app:gameText="Ninja Jump"
+            app:gameChecked="false"
+            app:layout_constraintTop_toBottomOf="@+id/pocketSoccer"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <com.example.ejercicio3.GameView
+            android:id="@+id/airControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gameImg="@drawable/games_aircontrol"
+            app:gameText="Air Control"
+            app:gameChecked="false"
+            app:layout_constraintTop_toBottomOf="@+id/ninjaJump"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_check_24"
+            app:backgroundTint="@color/strongBlue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="50dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
