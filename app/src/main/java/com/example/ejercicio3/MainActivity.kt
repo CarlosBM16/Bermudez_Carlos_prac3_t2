@@ -56,6 +56,11 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Búsqueda", Toast.LENGTH_LONG).show()
             return true
         }
+        if (id == R.id.action_settings) {
+            val intent = Intent(this, Filters::class.java)
+            startActivity(intent)
+            return true
+        }
         return super.onOptionsItemSelected(item)
     }
 }
